@@ -1,0 +1,13 @@
+name: PR comment workflow
+
+on:
+  issue_comment:
+    types: [ created, edited ]
+
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: hello
+        run: echo "hi"
